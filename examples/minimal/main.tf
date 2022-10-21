@@ -13,7 +13,7 @@ module "init" {
 # ci: x-release-please-start-version
 
 module "elasticsearch-sink" {
-  source              = "github.com/entur/terraform-aiven-kafka-connect-elasticsearch-sink//modules/elasticsearch-sink?ref=v0.1.0"
+  source              = "github.com/entur/terraform-aiven-kafka-connect-elasticsearch-sink//modules/elasticsearch-sink?ref=v0.1.1"
   init                = module.init
   connector_name      = "my-elasticsearch-sink-connector"
   connection_urls     = ["my-es-url1", "my-es-url2"]
