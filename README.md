@@ -1,8 +1,8 @@
 # Elasticsearch sink connector
 
-Terraform module for managing Elasticsearch sink connector on Aiven managed KafkaConnect cluster
+Terraform module for managing Elasticsearch sink connector on Aiven managed KafkaConnect cluster.
 This module depends on [Aiven kafka init module](https://github.com/entur/terraform-aiven-kafka-connect-init) to access
-basic information about Aiven's KafkaConnect clusters
+basic information about Aiven's KafkaConnect cluster
 
 [Module](modules/elasticsearch-sink)
 
@@ -36,7 +36,7 @@ module "elasticsearch-sink" {
 
 <!-- ci: x-release-please-end -->
 
-See the `README.md` under each module's subfolder for a list of supported inputs and outputs. For examples showing how
+See the [`README.md`](modules/elasticsearch-sink/README.md)  under module's subfolder for a list of supported inputs and outputs. For examples showing how
 they're implemented, check the [examples](examples) subfolder.
 
 ### Version constraints

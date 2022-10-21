@@ -30,11 +30,6 @@ variable "connection_urls" {
   description = "List of Elasticsearch HTTP connection URLs"
 }
 
-variable "kafka_topics" {
-  type        = list(string)
-  description = "List of kafka topic names to sink data from"
-}
-
 variable "connection_username" {
   type        = string
   description = "The username used for authentication against Elasticsearch service"
@@ -43,6 +38,11 @@ variable "connection_username" {
 variable "connection_password" {
   type        = string
   description = "The password used for authentication against Elasticsearch service"
+}
+
+variable "kafka_topics" {
+  type        = list(string)
+  description = "List of kafka topic names to sink data from"
 }
 
 variable "type_name" {
