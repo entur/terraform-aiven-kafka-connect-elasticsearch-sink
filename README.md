@@ -29,7 +29,7 @@ To be able to sink data to Elasticsearch server you need to figure out
 
 ```
 module "elasticsearch-sink" {
-  source = "github.com/entur/terraform-aiven-kafka-connect-elasticsearch-sink//modules/elasticsearch-sink?ref=v0.0.0"
+  source = "github.com/entur/terraform-aiven-kafka-connect-elasticsearch-sink//modules/elasticsearch-sink?ref=v0.1.0"
   ...
 }
 ```
