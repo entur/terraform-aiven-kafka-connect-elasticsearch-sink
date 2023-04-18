@@ -22,6 +22,7 @@ To be able to sink data to Elasticsearch server you need to figure out
 - the topics on the Kafka cluster to sink data from
 - the target Elasticsearch service URL(s)
 - credentials(username and password) to get access to the Elasticsearch service
+- Kafka user with permission to read topic schema
 
 <!-- ci: x-release-please-start-version -->
 
