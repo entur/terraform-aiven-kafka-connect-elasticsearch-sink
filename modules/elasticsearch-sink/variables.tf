@@ -2,13 +2,10 @@ variable "init" {
   description = "Entur init module output. https://github.com/entur/terraform-aiven-kafka-connect-init"
   type = object({
     aiven = object({
-      project      = string
-      service      = string
-      access_token = string
-    })
-    schema_registry = object({
-      url      = string
-      userinfo = string
+      access_token        = string
+      project             = string
+      service             = string
+      schema_registry_url = string
     })
     default_configuration = map(string)
   })
@@ -23,6 +20,11 @@ variable "connector_class" {
   type        = string
   description = "Name or alias of the class for this connector"
   default     = "io.aiven.connect.elasticsearch.ElasticsearchSinkConnector"
+}
+
+variable "kafka_username" {
+  description = "Aiven service registry username to connect to Kafka schema registry"
+  type        = string
 }
 
 variable "connection_urls" {

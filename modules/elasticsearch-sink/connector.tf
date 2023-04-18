@@ -8,9 +8,16 @@ locals {
       "connection.username" : var.connection_username,
       "connection.password" : var.connection_password,
       "topics" : join(",", toset(var.kafka_topics)),
-      "type.name" : var.type_name
+      "type.name" : var.type_name,
+      "value.converter.schema.registry.basic.auth.user.info" : "${data.aiven_kafka_user.kafka_user.username}:${data.aiven_kafka_user.kafka_user.password}"
     }
   )
+}
+
+data "aiven_kafka_user" "kafka_user" {
+  project      = var.init.aiven.project
+  service_name = var.init.aiven.service
+  username     = var.kafka_username
 }
 
 resource "aiven_kafka_connector" "elasticsearch-sink-connector" {
