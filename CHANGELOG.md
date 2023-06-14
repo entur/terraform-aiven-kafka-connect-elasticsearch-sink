@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/entur/terraform-aiven-kafka-connect-elasticsearch-sink/compare/v0.1.2...v0.1.3) (2023-06-14)
+
+
+### Bug Fixes
+
+* updated to the latest init module ([3801a1f](https://github.com/entur/terraform-aiven-kafka-connect-elasticsearch-sink/commit/3801a1f9b1903d5b4a7183f7bb69f1fbc3ca94b5))
+
 ## [0.1.2](https://github.com/entur/terraform-aiven-kafka-connect-elasticsearch-sink/compare/v0.1.1...v0.1.2) (2023-04-18)
 
 
